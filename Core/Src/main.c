@@ -127,16 +127,16 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  for (int32_t ccr = 0; ccr <= 999; ccr += 5)
+	  for (int32_t ccr = 0; ccr <= 999; ccr += 1)
 	  {
 	    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, ccr);
-	    HAL_Delay(5);
+
 	  }
-	  for (int32_t ccr = 999; ccr > 0; ccr -= 5)
-	  {
-	    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, ccr);
-	    HAL_Delay(5);
-	  }
+//	  for (int32_t ccr = 999; ccr > 0; ccr -= 5)
+//	  {
+//	    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, ccr);
+//	    HAL_Delay(5);
+//	  }
   }
   /* USER CODE END 3 */
 }
